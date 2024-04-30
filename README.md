@@ -77,11 +77,11 @@ Terraform plan:
 	==============================
 	
 	# aws_launch_template.auto-scaling-group will be updated in-place
-  ~ resource "aws_launch_template" "auto-scaling-group" {
-      - description             = "test-terraform" -> null
+        ~ resource "aws_launch_template" "auto-scaling-group" {
+       - description             = "test-terraform" -> null
         id                      = "lt-0a5ef2ae49a80f01b"
-      ~ instance_type           = "t2.nano" -> "t2.micro"
-      ~ latest_version          = 2 -> (known after apply)
+       ~ instance_type           = "t2.nano" -> "t2.micro"
+       ~ latest_version          = 2 -> (known after apply)
         name                    = "auto-scaling-group20240429124429746800000001"
         tags                    = {}
         # (10 unchanged attributes hidden)
