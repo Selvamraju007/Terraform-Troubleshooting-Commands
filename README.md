@@ -15,6 +15,7 @@ Ex: **terraform apply -target="aws_s3_bucket.exampleurse"**
 **terraform init -migrate-state**
 
 **Output**:
+
 Initializing the backend...
 Acquiring state lock. This may take a few moments...
 Do you want to copy existing state to the new backend?
@@ -43,6 +44,7 @@ S3 versioning has nothing to do with terraform state file
 We have done a instance type changes on aws_launch_template.auto-scaling-group from t2.micro to t2.nano for testing purpose.
 
 Output:
+
 aws_launch_template.auto-scaling-group has changed
   ~ resource "aws_launch_template" "auto-scaling-group" {
       + description             = "test-terraform"
@@ -66,10 +68,11 @@ aws_launch_template.auto-scaling-group has changed
 
 
 
-**Terraform plan:**
+**Terraform plan:** **(without refresh only)**
 ==================================
 
 Output:
+
 Terraform plan:
 	==============================
 	
