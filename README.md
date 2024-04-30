@@ -99,3 +99,12 @@ Plan: 0 to add, 1 to change, 0 to destroy.
 Would you like to update the Terraform state to reflect these detected changes?
   Terraform will write these changes to the state without modifying any real infrastructure.
   There is no undo. Only 'yes' will be accepted to confirm.
+
+  **terraform taint:**
+  ===========================
+
+  The terraform taint command informs Terraform that a particular object has become degraded or damaged. Terraform represents this by marking the object as "tainted" in the Terraform state, and Terraform will propose to replace it in the next plan you create.
+
+  Ex: **terraform apply -taint="aws_launch_template.auto-scaling-group"**
+
+  
