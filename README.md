@@ -74,7 +74,7 @@ Output:
 Output:
 
 Terraform plan:
-	==============================
+===============
 	
 	# aws_launch_template.auto-scaling-group will be updated in-place
         ~ resource "aws_launch_template" "auto-scaling-group" {
