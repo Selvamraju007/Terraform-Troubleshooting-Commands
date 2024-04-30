@@ -26,7 +26,7 @@ Do you want to copy existing state to the new backend?
 
   Enter a value: yes
 
- ** Deleted the resource from AWS console manually and try to run terraform apply then check the status for s3 versioning check:**
+ Deleted the resource from AWS console manually and try to run terraform apply then check the status for s3 versioning check:
  ================================================================================================================================
 
 EX: RDS db was deleted from aws console which is created by terraform. 
