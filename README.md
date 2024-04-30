@@ -45,8 +45,8 @@ We have done a instance type changes on aws_launch_template.auto-scaling-group f
 
 Output:
 
-aws_launch_template.auto-scaling-group has changed
-  ~ resource "aws_launch_template" "auto-scaling-group" {
+    aws_launch_template.auto-scaling-group has changed
+    ~ resource "aws_launch_template" "auto-scaling-group" {
       + description             = "test-terraform"
         id                      = "lt-0a5ef2ae49a80f01b"
       ~ instance_type           = "t2.micro" -> "t2.nano"
