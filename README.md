@@ -93,6 +93,9 @@ Plan: 0 to add, 1 to change, 0 to destroy.
 
 **terraform apply -refresh-only:**
 ==================================
+
+**Output**:
+
 Would you like to update the Terraform state to reflect these detected changes?
   Terraform will write these changes to the state without modifying any real infrastructure.
   There is no undo. Only 'yes' will be accepted to confirm.
