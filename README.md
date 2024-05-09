@@ -107,4 +107,51 @@ Would you like to update the Terraform state to reflect these detected changes?
 
   Ex: **terraform apply -taint="aws_launch_template.auto-scaling-group"**
 
+**Terraform Modules:**
+==============================
+
+Modules is mainly used for re-usability of code.
+
+which means see for example we have been asked us to create 5 s3 buckets with diferent name, in this scenario we have modules to create instead of creating 5 .tf files.
+
+Also, there are two kind of modules are available. 
+1. Local Modules
+2. Remote module
+
+**Local Modules:**
+Local modules will be saved in locally, which means source will download it from locally.
+
+```
+module "local" {
+  source = "./local"
+}
+```
+
+**Remote Modules:**
+Remote modules will download source from terraform registry, GitHub, etc .....
+
+**Code:**
+Terraform registry:
+
+```
+module "consul" {
+  source = "app.terraform.io/example-corp/k8s-cluster/azurerm"
+  version = "1.1.0"
+}
+```
+
+GitHub:
+```
+module "consul" {
+  source = "git@github.com:hashicorp/example.git"
+}
+```
+
+
+
+   
+
+
+  
+
   
